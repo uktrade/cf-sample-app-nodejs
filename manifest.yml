@@ -1,7 +1,9 @@
 ---
 applications:
 - name: cf-nodejs
-  buildpack: nodejs_buildpack
+  buildpack:
+    - https://github.com/cloudfoundry/nginx-buildpack.git#v1.0.1
+    - nodejs_buildpack
   memory: 512M
   instances: 1
   random-route: true
