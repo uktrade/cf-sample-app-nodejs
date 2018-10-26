@@ -4,7 +4,7 @@ $(document).ready( function() {
 
   var ping = setInterval( function() {
     $.ajax({
-      url: '/ping.txt',
+      url: '/test/ping.txt',
       dataType: 'text',
       success: function (data) {
         $("[data-ping='ping']").append( data )
